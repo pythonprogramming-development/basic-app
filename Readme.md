@@ -14,3 +14,19 @@ polls
 create models classes
 create views- normal, connect with HTML
 create urls
+
+
+pip install setuptools
+
+pip3 install virtualenv
+virtualenv newenv
+pip install django
+virtualenv --version
+pip install django-admin
+django-admin --version
+
+python --version
+pip --version
+python -m pip install Pillow
+
+https://render.com/docs/deploy-django
