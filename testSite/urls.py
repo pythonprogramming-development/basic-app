@@ -14,29 +14,35 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from django.urls import include 
+from django.urls import path, include
 from testSite.views import basic_view, hello_geek, geeks_view
-from basicGuide.views import home_view
-from polls.views import home_view
-from django.contrib import admin
-from django.urls import include, path
+from polls.views import home_view as polls_home_view
+from basicGuide.views import home_view as basic_guide_home_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #  path('', include("projectApp.urls")), 
-    #  path('', include("classbasedApp.urls")), 
-    path('', home_view), 
-
-    path('geek/', geeks_view), 
-    # path('', hello_geek),
-    ## add pages route
-    # point the root URLconf at the polls.urls module. In mysite/urls.py,
-
-    path('polls/', include('polls.urls')), ## you can also first empty string in first parameter 
-    path('home/', home_view), ## you can import method from any page directly and show the response
-    
-    path('', basic_view), ## you can import method from any page directly and show the response
+    # path('', include("projectApp.urls")), 
+    # path('', include("classbasedApp.urls")), 
+    path('', polls_home_view, name='home'), 
+    path('geek/', geeks_view, name='geek'), 
+    path('basic/', basic_view, name='basic'),
+    path('polls/', include('polls.urls')), 
+    path('home/', polls_home_view), 
 ]
+
+    # #  path('', include("projectApp.urls")), 
+    # #  path('', include("classbasedApp.urls")), 
+    # path('', home_view), 
+
+    # path('geek/', geeks_view), 
+    # # path('', hello_geek),
+    # ## add pages route
+    # # point the root URLconf at the polls.urls module. In mysite/urls.py,
+
+    # path('polls/', include('polls.urls')), ## you can also first empty string in first parameter 
+    # path('home/', home_view), ## you can import method from any page directly and show the response
+    
+    # path('', basic_view), ## you can import method from any page directly and show the response
+
 
 

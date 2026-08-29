@@ -1,175 +1,151 @@
-create page -> add in the installedapps and main urls (urlpatterns)
-create models classes
-create views- normal, connect with HTML
-create urls
+# My Awesome YouTube Channel
 
-Django framework basic setup
+Welcome to my YouTube channel! 🎉 In this channel, I share exciting content related to web development. Whether you're interested in Angular, Javascript, or Productivity tips, you'll find something valuable here.
+[YouTube Channel](http://youtube.com/@neweraofcoding)
 
-Introduction-
+## About Me
 
-It is fully featured server-side web application framework.
+I'm Sam, and I'm passionate about product engineering and web development. I create videos that will help you learn web development.
 
-In this, web pages and other content are delivered by views.
+## What You'll Find Here
 
-Page’s design is hard-coded in the view. The view can read records from a database.
-
-All this wants is that HttpResponse.
-
-views-
-
-Its views are divided into two major categories:-
-
-Function-Based Views- implemented with logics for creating, update, retrieve and delete views.
-
-Class-Based Views
-
-https://render.com/docs/deploy-django
+- **[ Angular ]**: [Learn the fundamentals. I explained everything you need to get started with this JavaScript framework written in TypeScript. It is the web development framework for building the future. works at any scale. Loved by millions. Build for everyone.  open-source framework for building single-page client applications using HTML and TypeScript.]
+- **[ Javascript ]**: [JavaScript is a powerful programming language that can add interactivity to a website. JavaScript is easy to learn. It's the foundation of frontend web development.]
+- **[ Career Tips ]**: [self-assessment, goal setting, action planning, implementation, and refinement. By following these steps, you can develop a road map for achieving your career goals. Tips to improve your career development. Cultivating a beginner's mindset is a critical part of career growth. critical part of your professional growth.]
+- **[ Common Errors ]**: [Mistakes to Avoid in Software Development Projects.]
+- **[ Development Tools ]**: [Top Software Development Tools List.]
+- **[ Typescript ]**: [TypeScript extends JavaScript by adding types to the language. TypeScript speeds up your development experience by catching errors. TypeScript can help enhance and improve your web development projects.]
+- **[ Git & GitHub ]**: [GitHub is where over 100 million developers shape the future of software together. Contribute to the open-source community and manage Git repositories. This practical guide gets you to jump right into using GitHub, learning the basics of Git. Git and GitHub are two of the most essential tools in the world of software development.]
+- **[ Video Conferencing Tool ]**: [Unlock the potential of video conferencing software development. Dive into our guide for insights on key features and cost factors.  If you're looking to integrate video communication into your app or planning to build a video streaming/conference app from scratch, create a fully customized audio & video conferencing app.]
 
 
-pip(python package manager)- pip is used to install python packages.
-
-common commands-
-pip install setuptools
-python --version
-pip --version
-pip install django
-pip install django-admin
-django-admin --version
->pip3 list
->flask –version
->pip list
-To install a particular package- python -m pip install Pillow
-create requirements- pip freeze > requirements.txt
-To install python project packages- pip install -r requirements.txt 
-To check/generate all project packages- pip3 freeze, pip freeze
-
-To get information on any package visit this site.
-
-To check the python version-
-
->py -3 -V
-
-To setup virtual environment-
-
-if you specifically prefer using mkvirtualenv to globally manage environments from one centralized location, you must install the Windows version of the wrapper
->py -m pip install virtualenvwrapper-win -> Windows wrapper utility
-mkvirtualenv my_django_environment -> mkvirtualenv automatically saves your new environment under your profile's \Envs folder and activates it instantly
-
-Standard Method (Using Virtual Environment)
-py -m venv my_django_environment - Create the environment first
-.\new_env\Scripts\activate -> .\my_django_environment\Scripts\Activate.ps1 - Activate the environment
-
-deactivate - Stop the Virtual Environment
-
-pip3 install virtualenv
-virtualenv newenv
-virtualenv --version
-
-py -m pip install Django
-To check version- py -3 -m django --version
-pip3 install django~=2.2 or python -m pip install [packagename] / py -m pip install [packagename]
-Windows
-
-cmd.exe
-
-To create a new project-
-
-django-admin startproject projectName - create new project
-
-To change directory-
-
-cd projectname
-
-To run the project-
-
-Python manage.py runserver
-
-It will run your project on http://127.0.0.1:8000/
-
-To run the app on a different port-
-
-python manage.py runserver 8081
-
-What 127.0.0.1 means?
-
-If you call the IP Address 127.0.0.1 then you are communicating with the localhost your own computer
-
+### About the app
+pip install -r requirements.txt 
 To create a new page-
+python or py manage.py startapp <name>
 
-python manage.py startapp projectApp
-python manage.py startapp polls
+
+example -
+
+python or py manage.py startapp projectApp
+py manage.py startapp polls
 
 projectApp and polls are page names.
 
-To create superuser-
+py manage.py check 
+py manage.py test
+py manage.py shwomigrations 
+py manage.py migrate
+py manage.py runserver - http://127.0.0.1:8000/
+https://docs.djangoproject.com/en/6.1/howto/deployment/
+### Useful Links
 
-Before creating a superuser you must need to migrate your changes. This superuser is needed when you are saving data to the database.
+###  APIs Detail
+ 
+### Packages used
 
->python manage.py migrate
+## Subscribe and Stay Updated!
 
-To create admin login-
+Don't miss out on new videos! Subscribe to my channel and hit the notification bell 🔔 to receive updates whenever I upload fresh content. Let's learn, laugh, and explore together!
 
->python manage.py createsuperuser
+[!Subscribe to My Channel](http://youtube.com/@neweraofcoding)
 
-After this, you can create a username and password.
+## Connect with Me
 
-To create a Database-
-After creating models, you need to migrate those changes-
+- **YouTube**: [YouTube Channel Link](http://youtube.com/@neweraofcoding)
+- **Facebook**: [Facebook Page Link](https://www.facebook.com/learnangular2plus/)
+- **Instagram**: [Instagram Page Link](https://www.instagram.com/angular_development/)
 
-python manage.py makemigrations
-python manage.py makemigrations polls # for particular page
-python manage.py migrate
+Feel free to reach out, comment on videos, and share your thoughts. I appreciate your support! 🙌
 
-### File structure-
+## License
 
-manage.py- to create one or more applications
+This project is licensed under the MIT License.
 
-settings.py- registering any applications we create, the location of our static files, database configuration details
+---
 
-urls.py- defines the site URL-to-view mappings.
+If you have any questions or need further assistance, feel free to ask! 🚀
 
-wsgi.py- communicate with the webserver
+##  Steps to contribute and generate PR(pull request)
 
-It supports 5 main databases PostgreSQL, MariaDB, MySQL, Oracle, and SQLite.
+ ###  clone the repository
+clone the forked repository to your system. Go to your GitHub account, open the forked repository, click on the code button and then clone the repository.
+If you want to use the terminal, use the following commands after you fork the repository, open the terminal type the given command
+```
+git clone repo url
+```
+### create a branch
+ create a branch on your local repository to solve a problem.
 
-By default, the configuration uses SQLite.
+Terminal commands
+```
+git checkout -b your_new_branch_name
+```   
+###   add & commit
+add your changes(folder) to that branch.
+Make necessary changes and commit those changes. Terminal commands
+```
+git add .
+git commit -m "your-commit-message"
+```
+### push changes to github
+finally, push your local repository to the remote repository compare & submit a pull request
 
-In future real projects scalable database like PostgreSQL.
+terminal commands
+```
+git push origin 
+```
+Go to your repository on GitHub, you'll see a compare & pull request button. Click on that button.
 
-it supports all the common database relationships: many-to-one, many-to-many, and one-to-one
+Now submit the pull request.
+   
+For quick approval of the pull request, reach out to me on the mentioned social media channels.
+```bash
 
-To include the app in our project, you need to add a reference to its configuration class in the INSTALLED_APPS setting.
 
-suppose you created a page polls. It will create some files to write the page logic. By default, it includes URLs, apps.py files etc. To create the path check the the PollsConfig class is in the polls/apps.py file, So its dotted path is 'polls.apps.PollsConfig'
 
-Update the mysite/settings.py file add it to INSTALLED_APPS. Here mysite is a master page means main application page.
+ _____ _                 _     __   __            
+|_   _| |               | |    \ \ / /            
+  | | | |__   __ _ _ __ | | __  \ V /___  _   _   
+  | | | '_ \ / _` | '_ \| |/ /   \ // _ \| | | |  
+  | | | | | | (_| | | | |   <    | | (_) | |_| |  
+  \_/ |_| |_|\__,_|_| |_|_|\_\   \_/\___/ \__,_|  
+                                                  
+                                                  
+______                                            
+|  ___|                                           
+| |_ ___  _ __                                    
+|  _/ _ \| '__|                                   
+| || (_) | |                                      
+\_| \___/|_|                                      
+                                                  
+                                                  
+______      _               _   _               _ 
+| ___ \    (_)             | | | |             | |
+| |_/ / ___ _ _ __   __ _  | |_| | ___ _ __ ___| |
+| ___ \/ _ \ | '_ \ / _` | |  _  |/ _ \ '__/ _ \ |
+| |_/ /  __/ | | | | (_| | | | | |  __/ | |  __/_|
+\____/ \___|_|_| |_|\__, | \_| |_/\___|_|  \___(_)
+                     __/ |                        
+                    |___/                         
 
-To Make the poll app modifiable in the admin
+ 
 
-Register this in the polls/admin.py file.
 
-from .models import Question
+```
+---------
+```javascript
 
-admin.site.register(Question)
+if (youEnjoyed) {
+ //  (star ⭐ & fork 🍽️) this repository.
+ // - Fork this repository by clicking on the fork button at the top of this page. This will create a copy of this repository in your account.
+    starThisRepository();
+}
 
-Django’s Template system
+```
+---------
+happy coding fellas!!💕✨
+-----------
+ 
 
-Using angle brackets “captures” part of the URL .
 
-create a directory called templates in your polls directory
-
-All POST forms that are targeted at internal URLs should use the {% csrf_token %} template tag.
-
-To clear the database run the below command it will clear data from this
-
-http://127.0.0.1:8000/admin
-
-python manage.py flush
-
-It also clears your admin username and password. After this, you have to create other credentials.
-
-Common Errors solution-
-
-move locals.py in the setting of the main default page.
-
-http://www.djangoproject.com/
