@@ -20,24 +20,105 @@ I'm Sam, and I'm passionate about product engineering and web development. I cre
 
 
 ### About the app
+To create a virtual environment-
+python -m venv venv
+.\venv\Scripts\Activate.ps1
 pip install -r requirements.txt 
+
 To create a new page-
 python or py manage.py startapp <name>
-
-
 example -
-
-python or py manage.py startapp projectApp
+python or py manage.py startapp classbasedApp
+py manage.py startapp projectApp
 py manage.py startapp polls
+py manage.py startapp basicGuide
 
-projectApp and polls are page names.
+classbasedApp and polls and projectApp and basicGuide are page names.
 
+For debugging
 py manage.py check 
 py manage.py test
 py manage.py shwomigrations 
+
+To run project-
 py manage.py migrate
 py manage.py runserver - http://127.0.0.1:8000/
+http://127.0.0.1:8000/ → 200 OK
+http://127.0.0.1:8000/polls/ → 200 OK
+http://127.0.0.1:8000/geek/ → 200 OK
+http://127.0.0.1:8000/basic/ → 200 OK
+http://127.0.0.1:8000/admin/ → 302 Found (redirecting to admin login)
 https://docs.djangoproject.com/en/6.1/howto/deployment/
+
+basic-app
+├── Readme.md
+├── basicGuide
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── migrations
+│   │   └── 0001_initial.py
+│   ├── models.py
+│   ├── templates
+│   │   └── home.html
+│   ├── tests.py
+│   └── views.py
+├── classbasedApp
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── migrations
+│   │   └── 0001_initial.py
+│   ├── models.py
+│   ├── templates
+│   │   ├── geeksmodel_confirm_delete.html
+│   │   ├── geeksmodel_form.html
+│   │   └── geeksmodel_list.html
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── db.sqlite3
+├── manage.py
+├── polls
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   └── 0002_geeksmodel.py
+│   ├── models.py
+│   ├── templates
+│   │   └── polls
+│   │       ├── about.html
+│   │       ├── detail.html
+│   │       ├── home.html
+│   │       ├── index.html
+│   │       ├── results.html
+│   │       └── style.css
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── projectApp
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── migrations
+│   │   └── 0001_initial.py
+│   ├── models.py
+│   ├── templates
+│   │   ├── Detail_view.html
+│   │   ├── create_view.html
+│   │   ├── delete_view.html
+│   │   ├── list_view.html
+│   │   └── update_view.html
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── requirements.txt
+└── testSite
+    ├── settings.py
+    ├── urls.py
+    ├── views.py
+    └── wsgi.py
 ### Useful Links
 
 ###  APIs Detail
